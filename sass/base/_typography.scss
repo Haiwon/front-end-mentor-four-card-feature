@@ -1,3 +1,19 @@
+body {
+    font-family: Poppins;
+    font-size: $base-font-size;
+    font-weight: $weight-light
+}
+
+h1, h2 {
+    color: $color-neutral-dark-blue;
+    text-align: center;
+    font-size: 22px;
+}
+
+h1 {
+    font-weight: $weight-light;
+}
+
 .attribution { 
     font-size: 11px; text-align: center; 
 
