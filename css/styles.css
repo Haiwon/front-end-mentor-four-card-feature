@@ -4,23 +4,97 @@
   box-sizing: border-box; }
 
 body {
-  margin: 10px; }
+  margin: 100px 20px; }
+
+@font-face {
+  font-family: icomoon;
+  src: url(../../fonts/icomoon.woff); }
 
 body {
   font-family: Poppins;
   font-size: 15px;
   font-weight: 200; }
 
-h1, h2 {
+.header {
   color: #4c4e61;
-  text-align: center;
-  font-size: 22px; }
+  text-align: center; }
+  .header__main {
+    font-weight: 200; }
+  .header__main, .header__sub {
+    font-size: calc(15px + 10px); }
 
-h1 {
-  font-weight: 200; }
+.paragraph {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #a3a5ae; }
 
 .attribution {
   font-size: 11px;
   text-align: center; }
   .attribution a {
     color: #3e52a3; }
+
+.cards {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 50px;
+  margin: 0 auto;
+  grid-auto-flow: row; }
+
+.header {
+  margin-bottom: 10px; }
+
+.paragraph {
+  margin-bottom: 50px; }
+
+.theme__switch {
+  background: linear-gradient(to right, white 50%, #091438 50%);
+  border-radius: 25px;
+  box-shadow: 10px 0px 2px rgba(0, 0, 0, 0.15);
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  font-family: icomoon;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-evenly; }
+  .theme__switch--moon {
+    color: white; }
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.096);
+  position: relative; }
+  .card-1 {
+    border-top: 5px solid #45d3d3;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4; }
+  .card-2 {
+    border-top: 5px solid #ea5353;
+    grid-column: 2 / 2;
+    grid-row: 1 / 3; }
+  .card-3 {
+    border-top: 5px solid #fcaf4a;
+    grid-column: 2 / 2;
+    grid-row: 3 / 5; }
+  .card-4 {
+    border-top: 5px solid #549ef2;
+    grid-column: 3 / 3;
+    grid-row: 2 / 4; }
+  .card__text {
+    width: 80%;
+    margin: 10px 0 10px 10px; }
+  .card__paragraph {
+    margin-bottom: 175px; }
+  .card__img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }

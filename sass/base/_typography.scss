@@ -1,17 +1,32 @@
+@font-face {
+    font-family: icomoon;
+    src: url(../../fonts/icomoon.woff)
+}
+
 body {
     font-family: Poppins;
     font-size: $base-font-size;
     font-weight: $weight-light
 }
 
-h1, h2 {
+.header {
     color: $color-neutral-dark-blue;
     text-align: center;
-    font-size: 22px;
+
+    &__main {
+        font-weight: $weight-light;
+    }
+
+    &__main, &__sub {
+        font-size: calc(#{$base-font-size} + 10px);
+    }
 }
 
-h1 {
-    font-weight: $weight-light;
+.paragraph {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: $color-neutral-grey-blue;
 }
 
 .attribution { 
