@@ -13,12 +13,20 @@ body {
     color: $color-neutral-dark-blue;
     text-align: center;
 
+    
+
     &__main {
         font-weight: $weight-light;
+        
     }
 
     &__main, &__sub {
         font-size: calc(#{$base-font-size} + 10px);
+        transition: color .2s;
+
+        &.dark {
+            color: white;
+        }
     }
 }
 
@@ -27,12 +35,21 @@ body {
     font-size: 15px;
     margin-bottom: 10px;
     color: $color-neutral-grey-blue;
+    transition: color .2s;
+
+    &.dark {
+        color: white;
+    }
 }
 
 .attribution { 
     font-size: 11px; text-align: center; 
 
-    a { 
+    a:link,
+    a:visited { 
         color: hsl(228, 45%, 44%); 
+        &.dark {
+            color: hsl(228, 90%, 80%);
+        }
     }
 }

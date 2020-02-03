@@ -6,4 +6,9 @@
 
 body {
     margin: 100px 20px;
+    transition: all .2s;
+    &.dark {
+        background-color: #0f1736;
+        color: white;
+    }
 }

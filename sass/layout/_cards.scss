@@ -6,5 +6,15 @@
     grid-gap: 50px;
     margin: 0 auto;
     grid-auto-flow: row;
+
+    @media only screen and (max-width: 1080px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    @media only screen and (max-width: 460px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-gap: 20px;
+    }
 }
 
