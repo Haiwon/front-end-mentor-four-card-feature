@@ -90,9 +90,11 @@ body {
   cursor: pointer;
   z-index: 1000; }
   .theme__switch--sun {
-    color: #091438; }
+    color: #091438;
+    padding: 10px; }
   .theme__switch--moon {
-    color: white; }
+    color: white;
+    padding: 10px; }
   .theme__switch.dark {
     box-shadow: -7px 0px 2px black; }
 
