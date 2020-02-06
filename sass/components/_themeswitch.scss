@@ -13,6 +13,9 @@
     font-size: 25px;
     justify-content: space-evenly;
     cursor: pointer;
+    // Fix anti-aliasing on theme switch container due to border radius and box-shadow
+    background-clip: content-box;
+    padding: .2px;
 
     z-index: 1000;
 

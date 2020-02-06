@@ -88,6 +88,8 @@ body {
   font-size: 25px;
   justify-content: space-evenly;
   cursor: pointer;
+  background-clip: content-box;
+  padding: .2px;
   z-index: 1000; }
   @media only screen and (max-width: 460px) {
     .theme__switch {
