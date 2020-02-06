@@ -23,6 +23,7 @@
         width: 80px;
         height: 40px;
         font-size: 20px;
+        box-shadow: 4.25px 0px 1.5px rgba(0, 0, 0, .6);
     }
 
     &--sun {
@@ -43,5 +44,9 @@
 
     &.dark {
         box-shadow: -7px 0px 2px rgb(0, 0, 0);
+
+        @media only screen and (max-width: 460px) {
+            box-shadow: -4.25px 0px 1.5px rgb(0, 0, 0);
+        }
     }
 }
