@@ -89,12 +89,23 @@ body {
   justify-content: space-evenly;
   cursor: pointer;
   z-index: 1000; }
+  @media only screen and (max-width: 460px) {
+    .theme__switch {
+      width: 80px;
+      height: 40px;
+      font-size: 20px; } }
   .theme__switch--sun {
     color: #091438;
     padding: 10px; }
+    @media only screen and (max-width: 460px) {
+      .theme__switch--sun {
+        padding: 8px; } }
   .theme__switch--moon {
     color: white;
     padding: 10px; }
+    @media only screen and (max-width: 460px) {
+      .theme__switch--moon {
+        padding: 8px; } }
   .theme__switch.dark {
     box-shadow: -7px 0px 2px black; }
 
